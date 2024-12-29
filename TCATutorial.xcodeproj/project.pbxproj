@@ -14,6 +14,9 @@
 		3DD9BC132D20C7BD003A6973 /* TCATutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9BC122D20C7BD003A6973 /* TCATutorialTests.swift */; };
 		3DD9BC1D2D20C7BD003A6973 /* TCATutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9BC1C2D20C7BD003A6973 /* TCATutorialUITests.swift */; };
 		3DD9BC1F2D20C7BD003A6973 /* TCATutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9BC1E2D20C7BD003A6973 /* TCATutorialUITestsLaunchTests.swift */; };
+		3DD9BC2C2D20C89D003A6973 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9BC2B2D20C89D003A6973 /* CounterFeature.swift */; };
+		3DD9BC2F2D21540A003A6973 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 3DD9BC2E2D21540A003A6973 /* ComposableArchitecture */; };
+		3DD9BC332D215850003A6973 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9BC322D215850003A6973 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		3DD9BC182D20C7BD003A6973 /* TCATutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCATutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD9BC1C2D20C7BD003A6973 /* TCATutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATutorialUITests.swift; sourceTree = "<group>"; };
 		3DD9BC1E2D20C7BD003A6973 /* TCATutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCATutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DD9BC2B2D20C89D003A6973 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		3DD9BC322D215850003A6973 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD9BC2F2D21540A003A6973 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				3DD9BC012D20C7BC003A6973 /* TCATutorialApp.swift */,
+				3DD9BC2B2D20C89D003A6973 /* CounterFeature.swift */,
 				3DD9BC032D20C7BC003A6973 /* ContentView.swift */,
+				3DD9BC322D215850003A6973 /* CounterView.swift */,
 				3DD9BC052D20C7BD003A6973 /* Assets.xcassets */,
 				3DD9BC072D20C7BD003A6973 /* Preview Content */,
 			);
@@ -141,8 +149,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				3DD9BC312D2156A1003A6973 /* PBXTargetDependency */,
 			);
 			name = TCATutorial;
+			packageProductDependencies = (
+				3DD9BC2E2D21540A003A6973 /* ComposableArchitecture */,
+			);
 			productName = TCATutorial;
 			productReference = 3DD9BBFE2D20C7BC003A6973 /* TCATutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 3DD9BBF52D20C7BC003A6973;
+			packageReferences = (
+				3DD9BC2D2D21540A003A6973 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 3DD9BBFF2D20C7BC003A6973 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD9BC2C2D20C89D003A6973 /* CounterFeature.swift in Sources */,
 				3DD9BC042D20C7BC003A6973 /* ContentView.swift in Sources */,
 				3DD9BC022D20C7BC003A6973 /* TCATutorialApp.swift in Sources */,
+				3DD9BC332D215850003A6973 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +308,10 @@
 			isa = PBXTargetDependency;
 			target = 3DD9BBFD2D20C7BC003A6973 /* TCATutorial */;
 			targetProxy = 3DD9BC192D20C7BD003A6973 /* PBXContainerItemProxy */;
+		};
+		3DD9BC312D2156A1003A6973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 3DD9BC302D2156A1003A6973 /* ComposableArchitecture */;
 		};
 /* End PBXTargetDependency section */
 
@@ -422,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCATutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 6522YLS3GH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCATutorial/Preview Content\"";
+				DEVELOPMENT_TEAM = 6522YLS3GH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -582,6 +605,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DD9BC2D2D21540A003A6973 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DD9BC2E2D21540A003A6973 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD9BC2D2D21540A003A6973 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		3DD9BC302D2156A1003A6973 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DD9BC2D2D21540A003A6973 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DD9BBF62D20C7BC003A6973 /* Project object */;
 }
