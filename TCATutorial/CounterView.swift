@@ -32,10 +32,10 @@ struct CounterView: View {
                 }
                 .font(.largeTitle)
                 .padding()
-                .background(Color.black.opacity(0.1))
+                .background(Color.secondary.opacity(0.1))
                 .cornerRadius(10)
                 
-                Button(store.isTimerRunning ? "Stop timer" : "Start timer") {
+                Button(store.isTimerRunning ? "Stop timer" : "Start time r") {
                   store.send(.toggleTimerButtonTapped)
                 }
                 .font(.largeTitle)
