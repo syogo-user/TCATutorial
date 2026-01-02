@@ -9,10 +9,10 @@ import SwiftUI
 import ComposableArchitecture
 
 struct CounterView: View {
-    let store: StoreOf<CounterFeature>
+    let store:StoreOf<CounterFeature>
     
-    var body: some View {
-        VStack {
+    var body:some View {
+        VStack{
             Text("\(store.count)")
                 .font(.largeTitle)
                 .padding()
