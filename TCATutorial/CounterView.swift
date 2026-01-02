@@ -32,7 +32,7 @@ struct CounterView: View {
                 }
                 .font(.largeTitle)
                 .padding()
-                .background(Color.black.opacity(0.1))
+                .background(Color.secondary.opacity(0.1))
                 .cornerRadius(10)
                 
                 Button(store.isTimerRunning ? "Stop timer" : "Start timer") {
@@ -43,7 +43,7 @@ struct CounterView: View {
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
                 
-                Button("トリビア詳細だよ") {
+                Button("トリビア詳細だよ！！！!!!") {
                     store.send(.factButtonTapped)
                 }
                 .font(.largeTitle)
