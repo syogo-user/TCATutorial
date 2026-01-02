@@ -43,13 +43,13 @@ struct CounterView: View {
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
                 
-                Button("トリビア詳細") {
+                Button("トリビア詳細だ よ ") {
                     store.send(.factButtonTapped)
                 }
                 .font(.largeTitle)
-                .padding()
+                .padding(5)
                 .background(Color.black.opacity(0.1))
-                .cornerRadius(10)
+                .cornerRadius(20)
                 
                 if store.isLoading {
                     ProgressView()
