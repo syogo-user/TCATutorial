@@ -1,5 +1,9 @@
 # TCATutorial - Copilot Instructions
 
+## 言語設定
+
+**すべてのコードレビュー、コメント、提案は日本語で記述してください。**
+
 ## プロジェクト概要
 
 このプロジェクトは **The Composable Architecture (TCA)** を使用した SwiftUI iOS アプリケーションのチュートリアルです。カウンター機能を持つタブベースのアプリを実装しています。

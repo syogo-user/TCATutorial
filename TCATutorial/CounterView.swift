@@ -9,10 +9,10 @@ import SwiftUI
 import ComposableArchitecture
 
 struct CounterView: View {
-    let store: StoreOf<CounterFeature>
+    let store:StoreOf<CounterFeature>
     
-    var body: some View {
-        VStack {
+    var body:some View {
+        VStack{
             Text("\(store.count)")
                 .font(.largeTitle)
                 .padding()
@@ -43,13 +43,13 @@ struct CounterView: View {
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
                 
-                Button("トリビア詳細") {
+                Button("トリビア詳細だよ") {
                     store.send(.factButtonTapped)
                 }
                 .font(.largeTitle)
-                .padding()
+                .padding(5)
                 .background(Color.black.opacity(0.1))
-                .cornerRadius(10)
+                .cornerRadius(20)
                 
                 if store.isLoading {
                     ProgressView()
