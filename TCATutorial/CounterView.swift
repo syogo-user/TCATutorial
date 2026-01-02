@@ -43,7 +43,7 @@ struct CounterView: View {
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
                 
-                Button("トリビア詳細だ よ ") {
+                Button("トリビア詳細だよ") {
                     store.send(.factButtonTapped)
                 }
                 .font(.largeTitle)
