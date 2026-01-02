@@ -47,9 +47,9 @@ struct CounterView: View {
                     store.send(.factButtonTapped)
                 }
                 .font(.largeTitle)
-                .padding(5)
+                .padding()
                 .background(Color.black.opacity(0.1))
-                .cornerRadius(20)
+                .cornerRadius(10)
                 
                 if store.isLoading {
                     ProgressView()
